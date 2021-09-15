@@ -1,11 +1,11 @@
 var mongoose = require("mongoose");
 const { encrypt } = require("../utils/encrypt");
-const { Schema } = mongoose;
 
 const userSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
+    trim:true
   },
   email: {
     type: String,
